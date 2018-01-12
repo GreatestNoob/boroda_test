@@ -1,0 +1,128 @@
+@media screen and (max-width: 1000px){
+	.tabs>label {
+		font-size: 10px !important;
+	}
+}
+
+.tabs {
+	position: relative;
+	min-width: 20px;
+	min-height: 20px;
+	float: right;
+}
+
+.tabs>section {
+	display: none;
+}
+.tabs>section>p {
+	margin: 0 0 5px;
+	line-height: 1.5;
+	color: #383838;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+
+ 
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.tabs>input {
+	display: none;
+	float: left;
+	position: absolute;
+}
+
+.tabs>label {
+	display: inline-block;
+	margin: 0;
+	float: left;
+	position: absolute;
+	font-weight: normal;
+	text-align: center;
+	color: #666;
+	padding: 0px 5px;
+	background: none;
+}
+.tab_one{
+	bottom: 0;
+	right: 40%;
+}
+.tab_two{
+	bottom: 0;
+	right: 0;
+}
+ 
+.tabs>label:hover {
+	color: #888;
+	cursor: pointer;
+}
+
+.tabs>input:checked+label {
+	color: white;
+	background: black;
+}
+
+#tab1:checked~#content-tab1, #tab2:checked~#content-tab2, #tab3:checked~#content-tab3, #tab4:checked~#content-tab4 {
+	display: block;
+}
+
+.var2{
+	background: #345776;
+	text-align:center;
+}
+.var3{
+	background: #754333;
+}
+
+.block{
+	width: 100px;
+	height: 100px;
+	background: #cc0000;
+	float: left;
+	margin-left: 4px;
+}
+.block2{
+	width: 100px;
+	height: 100px;
+	background: #cc0000;
+	display:inline-block;
+	
+}
+.block2:first-child{
+	margin:0;
+	
+}
+h2{
+	text-align: center;	
+}
+
+.my-flex-container{
+display: flex;
+}
+
+.block3{
+	width: 100px;
+	height: 100px;
+	background: #cc0000;
+	margin-left: 4px;
+	
+}
+
